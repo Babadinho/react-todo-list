@@ -11,7 +11,7 @@ const TodoItem = ({
     <div>
       <li className='list-group-item text-capitalize d-flex justify-content-between my-2'>
         {completed ? (
-          <h6 className='text-muted'>
+          <h6 className='text-muted d-flex align-items-center'>
             <del>{title}</del>
             <span
               style={{

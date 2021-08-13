@@ -102,7 +102,7 @@ function App() {
       <div className='container'>
         <div className='row'>
           <div className='mx-auto col-md-6 mt-4'>
-            <h3 className='text-capitalize text-center'>todo list</h3>
+            <h3 className='text-capitalize text-center'>Add Todo</h3>
             <TodoInput
               handleSubmit={handleSubmit}
               handleChange={handleChange}

@@ -25,7 +25,7 @@ const TodoList = ({
     <button
       onClick={clearList}
       type='button'
-      className='btn btn-danger btn-block text-capitalize mt-5'
+      className='btn btn-danger btn-block text-capitalize mt-5 rounded-0 shadow-none'
     >
       clear todos
     </button>

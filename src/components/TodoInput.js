@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoInput = ({ handleSubmit, handleChange, editItem, item }) => {
   return (
-    <div className='card card-body my-3'>
+    <div className='card card-body my-3 rounded-0'>
       <form onSubmit={handleSubmit}>
         <div className='input-group'>
           <div
@@ -26,8 +26,8 @@ const TodoInput = ({ handleSubmit, handleChange, editItem, item }) => {
           type='submit'
           className={
             editItem
-              ? 'btn btn-block btn-primary mt-3 form-control'
-              : 'btn btn-block btn-success mt-3 form-control'
+              ? 'btn btn-block btn-primary mt-3 form-control rounded-0 shadow-none'
+              : 'btn btn-block btn-success mt-3 form-control rounded-0 shadow-none'
           }
         >
           {editItem ? 'Edit Todo' : 'Add Todo'}

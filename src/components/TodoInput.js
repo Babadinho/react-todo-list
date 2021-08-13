@@ -5,20 +5,18 @@ const TodoInput = ({ handleSubmit, handleChange, editItem, item }) => {
     <div className='card card-body my-3'>
       <form onSubmit={handleSubmit}>
         <div className='input-group'>
-          <div className='input-group-prepend'>
-            <div
-              className={
-                editItem
-                  ? 'input-group-text bg-primary text-white'
-                  : 'input-group-text bg-success text-white'
-              }
-            >
-              <i className='fas fa-book fa-2x' />
-            </div>
+          <div
+            className={
+              editItem
+                ? 'input-group-text bg-primary text-white rounded-0 border-primary'
+                : 'input-group-text bg-success text-white rounded-0 border-success'
+            }
+          >
+            <i className='fas fa-book fa-2x' />
           </div>
           <input
             type='text'
-            className='form-control text-capitalize'
+            className='form-control text-capitalize rounded-0 shadow-none'
             placeholder='add todo item'
             value={item}
             onChange={handleChange}

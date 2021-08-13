@@ -101,7 +101,7 @@ function App() {
     <Router>
       <div className='container'>
         <div className='row'>
-          <div className='col-8 mx-auto col-md-8 mt-4'>
+          <div className='mx-auto col-md-6 mt-4'>
             <h3 className='text-capitalize text-center'>todo list</h3>
             <TodoInput
               handleSubmit={handleSubmit}
